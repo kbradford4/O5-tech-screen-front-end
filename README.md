@@ -28,9 +28,11 @@ Your submission must:
 
 ## Submission
 
-To submit your work, fork this repository, commit your work to your fork, and create a pull request from your fork into this repository.
+To submit your work, fork this repository, commit your work to your fork, and email a link to your forked repository to the person who invited you to take this test.
 
 Alternatively, you may create a ZIP file containing your submission's files and send that file (or a link to that file) to the person who invited you to take this test.
+
+Or, if you don't mind other applicants seeing your work, you may create a pull request into this repository.
 
 **Incomplete submissions are better than nothing.**
 
