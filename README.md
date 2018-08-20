@@ -1,4 +1,4 @@
-# Octane5 Technical Screening: UI
+# Octane5 Technical Screening: UI/UX/Front-end Engineering
 
 This is the technical screening task for front-end, UI-centric roles on the Octane5 Development Team.
 
@@ -14,6 +14,8 @@ Create a prototype of the interface described in the user story above, suitable 
 Note that the scope for this story is intentionally broad and somewhat open-ended. You may not have enough time to build the perfect prototype solution to this problem.
 
 Imagine your prototype will be used to demonstrate functionality to the client, and after user acceptance, will be handed directly to senior developers for implementation. **Show us your ability to meet this user's most important needs, with an attractive, functional prototype.**
+
+Some example images are included in this repository for your benefit. You can do whatever you want with them (including not using them at all if you're so inclined). 🙂
 
 ## Requirements
 
