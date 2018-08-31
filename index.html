@@ -1,7 +1,286 @@
 <!DOCTYPE html>
 <html>
-    <!--
-        Replace the contents of this file with your prototype.
-        You may create whatever other files and/or directories within this project that you like or need.
-    -->
+   <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>BrandComply Asset Library</title>
+		<meta name="description" content="Filterable asset library for BrandComply">
+		<meta name="author" content="Kalyn Bradford">
+		
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+	
+		<link href="https://fonts.googleapis.com/css?family=Jura:400|Oswald:400,700" rel="stylesheet">
+		
+		
+		<!-- Latest compiled and minified CSS -->
+		
+		<link rel="stylesheet" href="css/styles.css">
+   </head>
+   
+   <body>
+	   
+   		<header>
+	   		<img src="img/logo.png" alt="BrandComply">
+   		</header>
+   		
+   		<div class="wrapper">
+	   		<h1><span>BrandComply</span> Asset Library</h1>
+	   		
+	   		<div class="nav-wrap">
+		   		<ul>
+			   		<li class="btn active" id="all"><span>All</span></li>
+			   		<li class="btn" id="texture"><span>Texture</span></li>
+			   		<li class="btn" id="color"><span>Color</span></li>
+			   		<li class="btn" id="items"><span>Items</span></li>
+			   		<li class="btn" id="patterns"><span>Patterns</span></li>
+		   		</ul>
+	   		</div>
+	   		
+	   		<div class="asset-wrap" id="wrap">
+		   		<div class="asset patterns color">
+			   		<a href="img/dummy-1024x632-Utrecht.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-1024x632-Utrecht.jpg');">
+					   		<div class="caption"><span>Image Size:</span>1024x632</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+			   		</a>
+		   		</div><!--
+				--><div class="asset patterns">
+					<a href="img/dummy-800x533-Mosque.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-800x533-Mosque.jpg');">
+					   		<div class="caption"><span>Image Size:</span>800x533</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color">
+					<a href="img/dummy-683x1024-FairyLights.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-683x1024-FairyLights.jpg');">
+					   		<div class="caption"><span>Image Size:</span>683x1024</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color">
+					<a href="img/dummy-667x1000-FairyLights.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-667x1000-FairyLights.jpg');">
+					   		<div class="caption"><span>Image Size:</span>667x1000</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color item">
+					<a href="img/dummy-600x900-Menu.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-600x900-Menu.jpg');">
+					   		<div class="caption"><span>Image Size:</span>600x900</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color">
+					<a href="img/dummy-600x900-Circus.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-600x900-Circus.jpg');">
+					   		<div class="caption"><span>Image Size:</span>600x900</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset items">
+					<a href="img/dummy-600x800-Bottles.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-600x800-Bottles.jpg');">
+					   		<div class="caption"><span>Image Size:</span>600x800</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset texture patterns">
+					<a href="img/dummy-600x450-DesiccationCracks.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-600x450-DesiccationCracks.jpg');">
+					   		<div class="caption"><span>Image Size:</span>600x450</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset texture items color patterns">
+					<a href="img/dummy-576x1024-Rope.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-576x1024-Rope.jpg');">
+					   		<div class="caption"><span>Image Size:</span>576x1024</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset texture patterns">
+					<a href="img/dummy-576x1024-DesiccationCracks.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-576x1024-DesiccationCracks.jpg');">
+					   		<div class="caption"><span>Image Size:</span>576x1024</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color texture">
+					<a href="img/dummy-540x960-White.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-540x960-White.jpg');">
+					   		<div class="caption"><span>Image Size:</span>540x960</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color patterns">
+					<a href="img/dummy-540x960-Stripes.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-540x960-Stripes.jpg');">
+					   		<div class="caption"><span>Image Size:</span>540x960</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset items patterns color">
+					<a href="img/dummy-533x800-Comb.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-533x800-Comb.jpg');">
+					   		<div class="caption"><span>Image Size:</span>533x800</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color items">
+					<a href="img/dummy-500x810-Menu.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-500x810-Menu.jpg');">
+					   		<div class="caption"><span>Image Size:</span>500x810</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset texture items">
+					<a href="img/dummy-500x810-Menu.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-480x270-Stones.jpg');">
+					   		<div class="caption"><span>Image Size:</span>480x270</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset items patterns">
+					<a href="img/dummy-480x270-Bottles.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-480x270-Bottles.jpg');">
+					   		<div class="caption"><span>Image Size:</span>480x270</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset texture items color patterns">
+					<a href="img/dummy-454x280-Rope.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-454x280-Rope.jpg');">
+					   		<div class="caption"><span>Image Size:</span>454x280</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color patterns texture">
+					<a href="img/dummy-454x280-RedDots.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-454x280-RedDots.jpg');">
+					   		<div class="caption"><span>Image Size:</span>454x280</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset texture items">
+					<a href="img/dummy-375x500-Stones.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-375x500-Stones.jpg');">
+					   		<div class="caption"><span>Image Size:</span>375x500</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset items">
+					<a href="img/dummy-375x500-Bottles.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-375x500-Bottles.jpg');">
+					   		<div class="caption"><span>Image Size:</span>375x500</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color items">
+					<a href="img/dummy-320x180-Map.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-320x180-Map.jpg');">
+					   		<div class="caption"><span>Image Size:</span>320x180</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color items">
+					<a href="img/dummy-320x180-Map.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-315x560-Glass.jpg');">
+					   		<div class="caption"><span>Image Size:</span>315x560</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color items texture">
+					<a href="img/dummy-315x560-Floral.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-315x560-Floral.jpg');">
+					   		<div class="caption"><span>Image Size:</span>315x560</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset texture patterns">
+					<a href="img/dummy-240x320-Goemetry.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-240x320-Goemetry.jpg');">
+					   		<div class="caption"><span>Image Size:</span>240x320</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color texture patterns">
+					<a href="img/dummy-240x135-RedDots.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-240x135-RedDots.jpg');">
+					   		<div class="caption"><span>Image Size:</span>240x135</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color items">
+					<a href="img/dummy-200x200-Map.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-200x200-Map.jpg');">
+					   		<div class="caption"><span>Image Size:</span>200x200</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color items texture">
+					<a href="img/dummy-200x200-Floral.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-200x200-Floral.jpg');">
+					   		<div class="caption"><span>Image Size:</span>200x200</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color texture">
+					<a href="img/dummy-100x100-White.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-100x100-White.jpg');">
+					   		<div class="caption"><span>Image Size:</span>100x100</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div><!--
+				--><div class="asset color items">
+					<a href="img/dummy-100x100-Glass.jpg" class="open-lightbox">
+				   		<div class="inner-wrap" style="background-image: url('img/dummy-100x100-Glass.jpg');">
+					   		<div class="caption"><span>Image Size:</span>100x100</div>
+					   		<div class="color-overlay"></div>
+				   		</div>
+					</a>
+		   		</div>
+	   		</div>
+   		</div>
+   		
+   		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>
+   		
+   		<script src="js/main.js"></script>
+   		
+   </body>
+   
 </html>
