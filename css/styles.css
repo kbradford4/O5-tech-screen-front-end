@@ -1,0 +1,246 @@
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Jura', sans-serif;
+	font-size: 16px;
+	color: #111112;
+	margin: 0;
+	background-color: #d7dbde;
+	position: relative;
+}
+
+header {
+	background-color: #111112;
+	padding: 30px 0;
+}
+
+header img {
+	margin: 0 auto;
+	display: block;
+	max-width: 400px;
+}
+
+.wrapper {
+	max-width: 1110px;
+	margin: 0 auto;
+	display: block;
+	padding: 75px 0;
+}
+
+.wrapper h1 {
+	font-size: 40px;
+	text-align: center;
+	color: #4b545a;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.wrapper h1 span {
+	color: #ee7421;
+}
+
+
+/* Navigation Styles */
+
+.wrapper .nav-wrap {
+	border-top: 2px solid #ee7421;
+	text-align: center;
+}
+
+.wrapper .nav-wrap ul {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper .nav-wrap ul li {
+	display: inline-block;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.wrapper .nav-wrap ul li span {
+	padding: 10px 12px;
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: #4b545a;
+}
+
+.wrapper .nav-wrap ul li:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ee7421;
+    transition: width .3s;
+} 
+
+.wrapper .nav-wrap ul li.active span {
+	color: #111112;
+}
+
+.wrapper .nav-wrap ul li.active:after, .wrapper .nav-wrap ul li:hover:after, .wrapper .nav-wrap ul li:focus:after, .wrapper .nav-wrap ul li:active:after {
+	width: 100%;
+}
+
+
+
+/* Asset Wrapper Styles */
+
+.wrapper .asset-wrap {
+	margin-top: 30px;
+}
+
+.wrapper .asset-wrap .asset {
+	width: 25%;
+	padding: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.wrapper .asset-wrap .asset .inner-wrap {
+	-webkit-background-size: 200%;
+	background-size: 200%;
+	width: 100%;
+	padding-top: 100%;
+	background-position: center center;
+	transition: all 1.5s ease;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    position: relative;
+}
+
+.wrapper .asset-wrap .asset .inner-wrap .caption {
+	opacity: 0;
+	position: absolute;
+	z-index: 300;
+	font-size: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	left: 0;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    text-align: center;
+    color: #fff;
+}
+.wrapper .asset-wrap .asset .inner-wrap .caption span {
+	display: block;
+	font-family: 'Oswald',sans-serif;
+	text-transform: lowercase;
+	font-size: 14px;
+}
+
+.wrapper .asset-wrap .asset .inner-wrap .color-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #111112;
+	opacity: 0;
+	z-index: 200;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.wrapper .asset-wrap .asset:hover .inner-wrap {
+	-webkit-background-size: 225%;
+	background-size: 225%;
+}
+
+.wrapper .asset-wrap .asset:hover .caption {
+	opacity: 1;
+}
+
+.wrapper .asset-wrap .asset:hover .color-overlay {
+	opacity: .6;
+}
+
+
+/* Lightbox Styles */
+
+.lightbox-opened {
+  background-color: rgba(238, 116, 33, 0.95);
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  padding: 24px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 800;
+}
+.lightbox-opened:before {
+  background-color: #111112;
+  color: #eee;
+  content: "x";
+  font-family: 'Jura', sans-serif;
+  padding: 12px 17px;
+  position: fixed;
+  text-transform: uppercase;
+}
+.lightbox-opened img {
+  max-width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+	.wrapper .asset-wrap .asset {
+		width: 33.333%;
+	}
+	.wrapper {
+		padding: 50px 0;
+	}
+	.wrapper h1 {
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.wrapper .asset-wrap .asset {
+		width: 50%;
+	}
+	header {
+		padding: 10px 0;
+	}
+	header img {
+		width: 200px;
+	}
+	.wrapper {
+		padding: 30px 0;
+	}
+	.wrapper h1 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.wrapper h1 span {
+		display: block;
+	}
+	.wrapper .asset-wrap {
+		margin-top: 8px;
+	}
+	.wrapper .nav-wrap ul li span {
+		padding: 7px 6px;
+	}
+	.lightbox-opened {
+		padding: 12px;
+	}
+}
